@@ -1,0 +1,44 @@
+.student-register-form {
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 8px;
+  }
+  
+  .student-register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eee;
+    border-left: 4px solid #333;
+  }
+  
+  .predicted-rank {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d0ebff;
+    border-radius: 5px;
+    text-align: center;
+  }
+  

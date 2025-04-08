@@ -1,0 +1,74 @@
+/* TopperList.css */
+
+.branch-toppers-container {
+    padding: 40px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .form {
+    max-width: 400px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .result-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .info-text {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .error-text {
+    text-align: center;
+    color: red;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .topper-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topper-table th, 
+  .topper-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .topper-table th {
+    background-color: #e9f3fc;
+    font-weight: bold;
+  }
+  
+  .topper-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
