@@ -69,7 +69,9 @@ export default function BranchToppers() {
 
         {!loading && !error && (
           <>
-            {toppers.length === 0 ? (
+            {toppers === null ? (
+              <p className="info-text">No toppers data available.</p>
+            ) : toppers.length === 0 ? (
               <p className="info-text">No toppers found for the entered graduation year.</p>
             ) : (
               <div className="table-container">
