@@ -14,7 +14,7 @@ export default function BranchToppers() {
     setToppers([]);
 
     try {
-      const response = await fetch(`http://localhost:8080/topper/all?grad_year=${gradYear}`, {
+      const response = await fetch(`https://hostel-counselling-rank-predicto-production.up.railway.app/topper/all?grad_year=${gradYear}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

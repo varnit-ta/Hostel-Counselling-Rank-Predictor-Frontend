@@ -16,7 +16,7 @@ export default function TopperUpdateForm() {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/topper/update', {
+      const response = await fetch('https://hostel-counselling-rank-predicto-production.up.railway.app/topper/update', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -19,7 +19,7 @@ export default function StudentRegisterForm() {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/student/register', {
+      const response = await fetch('https://hostel-counselling-rank-predicto-production.up.railway.app/student/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ export default function StudentRegisterForm() {
       if (response.ok) {
         setMessage("Student registered successfully.");
 
-        const predictResponse = await fetch(`http://localhost:8080/student/rank?reg_no=${encodeURIComponent(regNo)}`, {
+        const predictResponse = await fetch(`https://hostel-counselling-rank-predicto-production.up.railway.app/student/rank?reg_no=${encodeURIComponent(regNo)}`, {
           headers: {
             'X-API-Key': 'secret',
           },
