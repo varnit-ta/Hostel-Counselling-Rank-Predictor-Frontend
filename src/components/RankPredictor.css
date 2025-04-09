@@ -1,0 +1,27 @@
+@import '../Dashboard.css';
+
+.rank-predictor {
+  composes: dashboard-card from '../Dashboard.css';
+}
+
+.rank-form {
+  composes: dashboard-form from '../Dashboard.css';
+}
+
+.rank-form input {
+  composes: dashboard-input from '../Dashboard.css';
+}
+
+.rank-form button {
+  composes: dashboard-button from '../Dashboard.css';
+}
+
+.prediction-result {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.error {
+  composes: dashboard-error from '../Dashboard.css';
+}

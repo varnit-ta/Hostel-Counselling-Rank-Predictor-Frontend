@@ -1,0 +1,41 @@
+@import '../Dashboard.css';
+
+.branch-toppers-container {
+  composes: dashboard-card from '../Dashboard.css';
+}
+
+.title {
+  composes: dashboard-title from '../Dashboard.css';
+}
+
+.form {
+  composes: dashboard-form from '../Dashboard.css';
+}
+
+.input {
+  composes: dashboard-input from '../Dashboard.css';
+}
+
+.button {
+  composes: dashboard-button from '../Dashboard.css';
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+.info-text {
+  composes: dashboard-info from '../Dashboard.css';
+}
+
+.error-text {
+  composes: dashboard-error from '../Dashboard.css';
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.topper-table {
+  composes: dashboard-table from '../Dashboard.css';
+}
