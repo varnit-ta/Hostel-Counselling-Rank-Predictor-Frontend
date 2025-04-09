@@ -9,6 +9,7 @@ export default function PredictedRank() {
 
   const regNo = location.state?.regNo;
 
+  
   useEffect(() => {
     if (!regNo) return;
 
