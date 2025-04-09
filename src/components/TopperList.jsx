@@ -45,7 +45,7 @@ export default function BranchToppers() {
       <form onSubmit={fetchToppers} className="flex flex-col gap-3">
         <input
           type="number"
-          placeholder="Enter Graduation Year (e.g., 2025)"
+          placeholder="Batch (e.g., 2022, 2024)"
           className="input-style"
           value={gradYear}
           onChange={(e) => setGradYear(e.target.value)}
