@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./TopperUpdateForm.css"; // link to CSS file
 
 export default function TopperUpdateForm() {
   const [batch, setBatch] = useState("");
@@ -41,25 +40,33 @@ export default function TopperUpdateForm() {
   };
 
   return (
-    <div className="topper-update-container">
-      <h2 className="topper-update-title">Update Topper CGPA (if wrong or not available)</h2>
+    <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-2xl shadow-lg">
+      <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">
+        Update Topper CGPA (if wrong or not available)
+      </h2>
 
-      {message && <div className="topper-update-message">{message}</div>}
+      {message && (
+        <div className="mb-4 text-sm text-white bg-blue-500 rounded-md px-4 py-2">
+          {message}
+        </div>
+      )}
 
-      <form className="topper-update-form" onSubmit={handleSubmit}>
+      <form className="space-y-4" onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Batch (e.g., BIT)"
+          placeholder="Branch (e.g., BIT, BCE)"
           value={batch}
           onChange={(e) => setBatch(e.target.value)}
           required
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input
           type="number"
-          placeholder="Graduation Year (e.g., 2024)"
+          placeholder="Batch (e.g., 2022, 2021)"
           value={gradYear}
           onChange={(e) => setGradYear(e.target.value)}
           required
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <input
           type="number"
@@ -68,8 +75,14 @@ export default function TopperUpdateForm() {
           value={topperCgpa}
           onChange={(e) => setTopperCgpa(e.target.value)}
           required
+          className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
-        <button type="submit">Submit</button>
+        <button
+          type="submit"
+          className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          Submit
+        </button>
       </form>
     </div>
   );

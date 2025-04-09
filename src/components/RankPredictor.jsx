@@ -49,7 +49,7 @@ export default function RankPredictor() {
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         <input
           type="text"
-          placeholder="Batch (e.g., BIT)"
+          placeholder="Branch (e.g., BIT, BCE)"
           value={batch}
           onChange={(e) => setBatch(e.target.value)}
           required
@@ -57,7 +57,7 @@ export default function RankPredictor() {
         />
         <input
           type="number"
-          placeholder="Graduation Year (e.g., 2022)"
+          placeholder="Batch (e.g., 2022, 2021)"
           value={gradYear}
           onChange={(e) => setGradYear(e.target.value)}
           required
