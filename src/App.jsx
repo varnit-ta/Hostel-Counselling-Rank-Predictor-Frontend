@@ -1,8 +1,6 @@
-import TopperList from "./TopperList";
-import TopperUpdateForm from "./TopperUpdateForm";
-import StudentRegisterForm from "./StudentRegisterForm";
 import { Routes, Route } from "react-router-dom";
-import Dashboard from "./Dashboard"; // you'll create this next
+import StudentRegisterForm from "./StudentRegisterForm";
+import Dashboard from "./Dashboard";
 
 function App() {
   return (
